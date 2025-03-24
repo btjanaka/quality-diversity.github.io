@@ -1,5 +1,172 @@
 papers:
 
+- abstract: 'Training large language models to acquire specific skills remains a
+
+    challenging endeavor. Conventional training approaches often struggle with data
+
+    distribution imbalances and inadequacies in objective functions that do not
+
+    align well with task-specific performance. To address these challenges, we
+
+    introduce CycleQD, a novel approach that leverages the Quality Diversity
+
+    framework through a cyclic adaptation of the algorithm, along with a model
+
+    merging based crossover and an SVD-based mutation. In CycleQD, each task''s
+
+    performance metric is alternated as the quality measure while the others serve
+
+    as the behavioral characteristics. This cyclic focus on individual tasks allows
+
+    for concentrated effort on one task at a time, eliminating the need for data
+
+    ratio tuning and simplifying the design of the objective function. Empirical
+
+    results from AgentBench indicate that applying CycleQD to LLAMA3-8B-INSTRUCT
+
+    based models not only enables them to surpass traditional fine-tuning methods
+
+    in coding, operating systems, and database tasks, but also achieves performance
+
+    on par with GPT-3.5-TURBO, which potentially contains much more parameters,
+
+    across these domains. Crucially, this enhanced performance is achieved while
+
+    retaining robust language capabilities, as evidenced by its performance on
+
+    widely adopted language benchmark tasks. We highlight the key design choices in
+
+    CycleQD, detailing how these contribute to its effectiveness. Furthermore, our
+
+    method is general and can be applied to image segmentation models, highlighting
+
+    its applicability across different domains.'
+  authors:
+  - So Kuroki
+  - Taishi Nakamura
+  - Takuya Akiba
+  - Yujin Tang
+  bibtex: "@article{Kuroki2024Agent,\n\ttitle={Agent Skill Acquisition for Large Language\
+    \ Models via CycleQD},\n\tauthor={Kuroki, So and Nakamura, Taishi and Akiba, Takuya\
+    \ and Tang, Yujin},\n\tjournal={arXiv preprint arXiv:2410.14735v4},\n\tyear={2024}\
+    \ }"
+  pdfurl: http://arxiv.org/pdf/2410.14735v4
+  title: Agent Skill Acquisition for Large Language Models via CycleQD
+  year: 2024
+
+- abstract: 'Quality-Diversity (QD) algorithms have exhibited promising results across
+
+    many domains and applications. However, uncertainty in fitness and behaviour
+
+    estimations of solutions remains a major challenge when QD is used in complex
+
+    real-world applications. While several approaches have been proposed to improve
+
+    the performance in uncertain applications, many fail to address a key
+
+    challenge: determining how to prioritise solutions that perform consistently
+
+    under uncertainty, in other words, solutions that are reproducible. Most prior
+
+    methods improve fitness and reproducibility jointly, ignoring the possibility
+
+    that they could be contradictory objectives. For example, in robotics,
+
+    solutions may reliably walk at 90% of the maximum velocity in uncertain
+
+    environments, while solutions that walk faster are also more prone to falling
+
+    over. As this is a trade-off, neither one of these two solutions is "better"
+
+    than the other. Thus, algorithms cannot intrinsically select one solution over
+
+    the other, but can only enforce given preferences over these two contradictory
+
+    objectives. In this paper, we formalise this problem as the
+
+    performance-reproducibility trade-off for uncertain QD. We propose four new
+
+    a-priori QD algorithms that find optimal solutions for given preferences over
+
+    the trade-offs. We also propose an a-posteriori QD algorithm for when these
+
+    preferences cannot be defined in advance. Our results show that our approaches
+
+    successfully find solutions that satisfy given preferences. Importantly, by
+
+    simply accounting for this trade-off, our approaches perform better than
+
+    existing uncertain QD methods. This suggests that considering the
+
+    performance-reproducibility trade-off unlocks important stepping stones that
+
+    are usually missed when only performance is optimised.'
+  authors:
+  - Manon Flageat
+  - Hannah Janmohamed
+  - Bryan Lim
+  - Antoine Cully
+  bibtex: "@article{Flageat2024Exploring,\n\ttitle={Exploring the Performance\u2013\
+    Reproducibility Trade\u2013off in Quality\u2013Diversity},\n\tauthor={Flageat,\
+    \ Manon and Janmohamed, Hannah and Lim, Bryan and Cully, Antoine},\n\tjournal={arXiv\
+    \ preprint arXiv:2409.13315v2},\n\tyear={2024} }"
+  pdfurl: http://arxiv.org/pdf/2409.13315v2
+  title: "Exploring the Performance\u2013Reproducibility Trade\u2013off in Quality\u2013\
+    Diversity"
+  year: 2024
+
+- abstract: 'Quality-Diversity is a family of evolutionary algorithms that generate
+
+    diverse, high-performing solutions through local competition principles
+
+    inspired by natural evolution. While research has focused on improving specific
+
+    aspects of Quality-Diversity algorithms, surprisingly little attention has been
+
+    paid to investigating alternative formulations of local competition itself --
+
+    the core mechanism distinguishing Quality-Diversity from traditional
+
+    evolutionary algorithms. Most approaches implement local competition through
+
+    explicit collection mechanisms like fixed grids or unstructured archives,
+
+    imposing artificial constraints that require predefined bounds or hard-to-tune
+
+    parameters. We show that Quality-Diversity methods can be reformulated as
+
+    Genetic Algorithms where local competition occurs through fitness
+
+    transformations rather than explicit collection mechanisms. Building on this
+
+    insight, we introduce Dominated Novelty Search, a Quality-Diversity algorithm
+
+    that implements local competition through dynamic fitness transformations,
+
+    eliminating the need for predefined bounds or parameters. Our experiments show
+
+    that Dominated Novelty Search significantly outperforms existing approaches
+
+    across standard Quality-Diversity benchmarks, while maintaining its advantage
+
+    in challenging scenarios like high-dimensional and unsupervised spaces.'
+  authors:
+  - Ryan Bahlous-Boldi
+  - Maxence Faldor
+  - Luca Grillotti
+  - Hannah Janmohamed
+  - Lisa Coiffard
+  - Lee Spector
+  - Antoine Cully
+  bibtex: "@article{Bahlous-Boldi2025Dominated,\n\ttitle={Dominated Novelty Search\
+    \ Rethinking Local Competition in Quality\u2013Diversity},\n\tauthor={Bahlous-Boldi,\
+    \ Ryan and Faldor, Maxence and Grillotti, Luca and Janmohamed, Hannah and Coiffard,\
+    \ Lisa and Spector, Lee and Cully, Antoine},\n\tjournal={arXiv preprint arXiv:2502.00593v1},\n\
+    \tyear={2025} }"
+  pdfurl: http://arxiv.org/pdf/2502.00593v1
+  title: "Dominated Novelty Search Rethinking Local Competition in Quality\u2013Diversity"
+  year: 2025
+
 - abstract: 'Improving open-ended learning capabilities is a promising approach to
     enable
 
