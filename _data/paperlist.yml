@@ -1,5 +1,58 @@
 papers:
 
+- abstract: 'Policy optimization seeks the best solution to a control problem according
+    to
+
+    an objective or fitness function, serving as a fundamental field of engineering
+
+    and research with applications in robotics. Traditional optimization methods
+
+    like reinforcement learning and evolutionary algorithms struggle with deceptive
+
+    fitness landscapes, where following immediate improvements leads to suboptimal
+
+    solutions. Quality-diversity (QD) algorithms offer a promising approach by
+
+    maintaining diverse intermediate solutions as stepping stones for escaping
+
+    local optima. However, QD algorithms require domain expertise to define
+
+    hand-crafted features, limiting their applicability where characterizing
+
+    solution diversity remains unclear. In this paper, we show that unsupervised QD
+
+    algorithms - specifically the AURORA framework, which learns features from
+
+    sensory data - efficiently solve deceptive optimization problems without domain
+
+    expertise. By enhancing AURORA with contrastive learning and periodic
+
+    extinction events, we propose AURORA-XCon, which outperforms all traditional
+
+    optimization baselines and matches, in some cases even improving by up to 34%,
+
+    the best QD baseline with domain-specific hand-crafted features. This work
+
+    establishes a novel application of unsupervised QD algorithms, shifting their
+
+    focus from discovering novel solutions toward traditional optimization and
+
+    expanding their potential to domains where defining feature spaces poses
+
+    challenges.'
+  authors:
+  - Lisa Coiffard
+  - Paul Templier
+  - Antoine Cully
+  bibtex: "@article{Coiffard2025Overcoming,\n\ttitle={Overcoming Deceptiveness in\
+    \ Fitness Optimization with Unsupervised Quality\u2013Diversity},\n\tauthor={Coiffard,\
+    \ Lisa and Templier, Paul and Cully, Antoine},\n\tjournal={arXiv preprint arXiv:2504.01915v2},\n\
+    \tyear={2025} }"
+  pdfurl: http://arxiv.org/pdf/2504.01915v2
+  title: "Overcoming Deceptiveness in Fitness Optimization with Unsupervised Quality\u2013\
+    Diversity"
+  year: 2025
+
 - abstract: 'Training large language models to acquire specific skills remains a
 
     challenging endeavor. Conventional training approaches often struggle with data
