@@ -6011,3 +6011,30 @@ and standard quality-diversity methods.'
           journal={International Conference on Learning Representations},
           year={2024}
         }
+
+- title: "Quality Diversity for Robot Learning: Limitations and Future Directions"
+  authors:
+    - Sumeet Batra
+    - Bryon Tjanaka
+    - Stefanos Nikolaidis
+    - Gaurav Sukhatme
+  year: 2024
+  pdfurl: "https://dl.acm.org/doi/10.1145/3638530.3654431"
+  abstract: "Quality Diversity (QD) has shown great success in discovering high-performing, diverse policies for robot skill learning. While current benchmarks have led to the development of powerful QD methods, we argue that new paradigms must be developed to facilitate open-ended search and generalizability. In particular, many methods focus on learning diverse agents that each move to a different xy position in MAP-Elites-style bounded archives. Here, we show that such tasks can be accomplished with a single, goal-conditioned policy paired with a classical planner, achieving O(1) space complexity w.r.t. the number of policies and generalization to task variants. We hypothesize that this approach is successful because it extracts task-invariant structural knowledge by modeling a relational graph between adjacent cells in the archive. We motivate this view with emerging evidence from computational neuroscience and explore connections between QD and models of cognitive maps in human and other animal brains. We conclude with a discussion exploring the relationships between QD and cognitive maps, and propose future research directions inspired by cognitive maps towards future generalizable algorithms capable of truly open-ended search."
+  bibtex: |
+        @inproceedings{10.1145/3638530.3654431,
+            author = {Batra, Sumeet and Tjanaka, Bryon and Nikolaidis, Stefanos and Sukhatme, Gaurav},
+            title = {Quality Diversity for Robot Learning: Limitations and Future Directions},
+            year = {2024},
+            isbn = {9798400704956},
+            publisher = {Association for Computing Machinery},
+            address = {New York, NY, USA},
+            url = {https://doi.org/10.1145/3638530.3654431},
+            doi = {10.1145/3638530.3654431},
+            booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+            pages = {587–590},
+            numpages = {4},
+            keywords = {quality diversity, cognitive maps, reinforcement learning},
+            location = {Melbourne, VIC, Australia},
+            series = {GECCO '24 Companion}
+        }
