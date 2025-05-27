@@ -5911,3 +5911,56 @@ and standard quality-diversity methods.'
          volume = {34},
          year = {2021}
         }
+
+- title: "Covariance Matrix Adaptation MAP-Annealing"
+  authors:
+    - Matthew C. Fontaine
+    - Stefanos Nikolaidis
+  year: 2023
+  pdfurl: "https://dl.acm.org/doi/abs/10.1145/3583131.3590389"
+  abstract:
+      "Single-objective optimization algorithms search for the single highest-quality solution with respect to an objective. Quality diversity (QD) optimization algorithms, such as Covariance Matrix Adaptation MAP-Elites (CMA-ME), search for a collection of solutions that are both high-quality with respect to an objective and diverse with respect to specified measure functions. However, CMA-ME suffers from three major limitations highlighted by the QD community: prematurely abandoning the objective in favor of exploration, struggling to explore flat objectives, and having poor performance for low-resolution archives. We propose a new quality diversity algorithm, Covariance Matrix Adaptation MAP-Annealing (CMA-MAE), that addresses all three limitations. We provide theoretical justifications for the new algorithm with respect to each limitation. Our theory informs our experiments, which support the theory and show that CMA-MAE achieves state-of-the-art performance and robustness."
+  bibtex: |
+        @inproceedings{10.1145/3583131.3590389,
+            author = {Fontaine, Matthew and Nikolaidis, Stefanos},
+            title = {Covariance Matrix Adaptation MAP-Annealing},
+            year = {2023},
+            isbn = {9798400701191},
+            publisher = {Association for Computing Machinery},
+            address = {New York, NY, USA},
+            url = {https://doi.org/10.1145/3583131.3590389},
+            doi = {10.1145/3583131.3590389},
+            booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+            pages = {456–465},
+            numpages = {10},
+            location = {Lisbon, Portugal},
+            series = {GECCO '23}
+        }
+
+- title: "Covariance Matrix Adaptation MAP-Annealing: Theory and Experiments"
+  authors:
+    - Shihan Zhao
+    - Bryon Tjanaka
+    - Matthew C. Fontaine
+    - Stefanos Nikolaidis
+  year: 2025
+  pdfurl: "https://dl.acm.org/doi/10.1145/3665336"
+  abstract: "Single-objective optimization algorithms search for the single highest quality solution with respect to an objective. Quality diversity (QD) optimization algorithms, such as Covariance Matrix Adaptation MAP-Elites (CMA-ME), search for a collection of solutions that are both high quality with respect to an objective and diverse with respect to specified measure functions. However, CMA-ME suffers from three major limitations highlighted by the QD community: prematurely abandoning the objective in favor of exploration, struggling to explore flat objectives, and having poor performance for low-resolution archives. We propose a new QD algorithm, CMA MAP-Annealing (CMA-MAE), and its differentiable QD variant, CMA-MAE via a Gradient Arborescence (CMA-MAEGA), that address all three limitations. We provide theoretical justifications for the new algorithm with respect to each limitation. Our theory informs our experiments, which support the theory and show that CMA-MAE achieves state-of-the-art performance and robustness on standard QD benchmark and reinforcement learning domains."
+  bibtex: |
+        @article{10.1145/3665336,
+            author = {Zhao, Shihan and Tjanaka, Bryon and Fontaine, Matthew C. and Nikolaidis, Stefanos},
+            title = {Covariance Matrix Adaptation MAP-Annealing: Theory and Experiments},
+            year = {2025},
+            issue_date = {March 2025},
+            publisher = {Association for Computing Machinery},
+            address = {New York, NY, USA},
+            volume = {5},
+            number = {1},
+            url = {https://doi.org/10.1145/3665336},
+            doi = {10.1145/3665336},
+            journal = {ACM Trans. Evol. Learn. Optim.},
+            month = mar,
+            articleno = {4},
+            numpages = {53},
+            keywords = {Quality-diversity algorithms, evolutionary strategies}
+        }
