@@ -5964,3 +5964,31 @@ and standard quality-diversity methods.'
             numpages = {53},
             keywords = {Quality-diversity algorithms, evolutionary strategies}
         }
+
+- title: "Density Descent for Diversity Optimization"
+  authors:
+    - David H. Lee
+    - Anishalakshmi Palaparthi
+    - Matthew C. Fontaine
+    - Bryon Tjanaka
+    - Stefanos Nikolaidis
+  year: 2024
+  pdfurl: "https://dl.acm.org/doi/10.1145/3638529.3654001"
+  abstract: "Diversity optimization seeks to discover a set of solutions that elicit diverse features. Prior work has proposed Novelty Search (NS), which, given a current set of solutions, seeks to expand the set by finding points in areas of low density in the feature space. However, to estimate density, NS relies on a heuristic that considers the k-nearest neighbors of the search point in the feature space, which yields a weaker stability guarantee. We propose Density Descent Search (DDS), an algorithm that explores the feature space via CMA-ES on a continuous density estimate of the feature space that also provides a stronger stability guarantee. We experiment with DDS and two density estimation methods: kernel density estimation (KDE) and continuous normalizing flow (CNF). On several standard diversity optimization benchmarks, DDS outperforms NS, the recently proposed MAP-Annealing algorithm, and other state-of-the-art baselines. Additionally, we prove that DDS with KDE provides stronger stability guarantees than NS, making it more suitable for adaptive optimizers. Furthermore, we prove that NS is a special case of DDS that descends a KDE of the feature space."
+  bibtex: |
+        @inproceedings{10.1145/3638529.3654001,
+            author = {Lee, David H. and Palaparthi, Anishalakshmi and Fontaine, Matthew C. and Tjanaka, Bryon and Nikolaidis, Stefanos},
+            title = {Density Descent for Diversity Optimization},
+            year = {2024},
+            isbn = {9798400704949},
+            publisher = {Association for Computing Machinery},
+            address = {New York, NY, USA},
+            url = {https://doi.org/10.1145/3638529.3654001},
+            doi = {10.1145/3638529.3654001},
+            booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+            pages = {674–682},
+            numpages = {9},
+            keywords = {quality diversity, kernel density estimation, novelty search},
+            location = {Melbourne, VIC, Australia},
+            series = {GECCO '24}
+        }
