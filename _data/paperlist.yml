@@ -5992,3 +5992,22 @@ and standard quality-diversity methods.'
             location = {Melbourne, VIC, Australia},
             series = {GECCO '24}
         }
+
+- title: "Proximal Policy Gradient Arborescence for Quality Diversity Reinforcement Learning"
+  authors:
+    - Sumeet Batra
+    - Bryon Tjanaka
+    - Matthew C. Fontaine
+    - Aleksei Petrenko
+    - Stefanos Nikolaidis
+    - Gaurav Sukhatme
+  year: 2024
+  pdfurl: "https://openreview.net/forum?id=TFKIfhvdmZ"
+  abstract: "Training generally capable agents that thoroughly explore their environment and learn new and diverse skills is a long-term goal of robot learning. Quality Diversity Reinforcement Learning (QD-RL) is an emerging research area that blends the best aspects of both fields – Quality Diversity (QD) provides a principled form of exploration and produces collections of behaviorally diverse agents, while Reinforcement Learning (RL) provides a powerful performance improvement operator enabling generalization across tasks and dynamic environments. Existing QD-RL approaches have been constrained to sample efficient, deterministic off- policy RL algorithms and/or evolution strategies and struggle with highly stochastic environments. In this work, we, for the first time, adapt on-policy RL, specifically Proximal Policy Optimization (PPO), to the Differentiable Quality Diversity (DQD) framework and propose several changes that enable efficient optimization and discovery of novel skills on high-dimensional, stochastic robotics tasks. Our new algorithm, Proximal Policy Gradient Arborescence (PPGA), achieves state-of- the-art results, including a 4x improvement in best reward over baselines on the challenging humanoid domain."
+  bibtex: |
+        @article{ppga,
+          title={Proximal Policy Gradient Arborescence for Quality Diversity Reinforcement Learning},
+          author={Batra, Sumeet and Tjanaka, Bryon and Fontaine, Matthew C and Petrenko, Aleksei and Nikolaidis, Stefanos and Sukhatme, Gaurav},
+          journal={International Conference on Learning Representations},
+          year={2024}
+        }
