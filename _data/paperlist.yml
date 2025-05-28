@@ -1774,49 +1774,6 @@ and standard quality-diversity methods.'
     in Simulation'
   year: 2022
 
-- abstract: 'Pre-training a diverse set of neural network controllers in simulation
-    has
-
-    enabled robots to adapt online to damage in robot locomotion tasks. However,
-
-    finding diverse, high-performing controllers requires expensive network
-
-    training and extensive tuning of a large number of hyperparameters. On the
-
-    other hand, Covariance Matrix Adaptation MAP-Annealing (CMA-MAE), an evolution
-
-    strategies (ES)-based quality diversity algorithm, does not have these
-
-    limitations and has achieved state-of-the-art performance on standard QD
-
-    benchmarks. However, CMA-MAE cannot scale to modern neural network controllers
-
-    due to its quadratic complexity. We leverage efficient approximation methods in
-
-    ES to propose three new CMA-MAE variants that scale to high dimensions. Our
-
-    experiments show that the variants outperform ES-based baselines in benchmark
-
-    robotic locomotion tasks, while being comparable with or exceeding
-
-    state-of-the-art deep reinforcement learning-based quality diversity
-
-    algorithms.'
-  authors:
-  - Bryon Tjanaka
-  - Matthew C. Fontaine
-  - David H. Lee
-  - Aniruddha Kalkar
-  - Stefanos Nikolaidis
-  bibtex: "@article{Tjanaka2022Training,\n\ttitle={Training Diverse High-Dimensional\
-    \ Controllers by Scaling Covariance Matrix Adaptation MAP-Annealing},\n\tauthor={Tjanaka,\
-    \ Bryon and C. Fontaine, Matthew and H. Lee, David and Kalkar, Aniruddha and Nikolaidis,\
-    \ Stefanos},\n\tjournal={arXiv preprint arXiv:2210.02622v2},\n\tyear={2022} }"
-  pdfurl: http://arxiv.org/pdf/2210.02622v2
-  title: Training Diverse High-Dimensional Controllers by Scaling Covariance Matrix
-    Adaptation MAP-Annealing
-  year: 2022
-
 - authors:
   - Thomas Pierrot
   - Guillaume Richard
@@ -5933,3 +5890,151 @@ and standard quality-diversity methods.'
             series = {ICSE '22}
           }
           "
+
+- title: "Differentiable Quality Diversity"
+  authors:
+    - Matthew C. Fontaine
+    - Stefanos Nikolaidis
+  year: 2021
+  pdfurl: "https://openreview.net/forum?id=uJGObgFU0lU"
+  abstract:
+    "Quality diversity (QD) is a growing branch of stochastic optimization research that studies the problem of generating an archive of solutions that maximize a given objective function but are also diverse with respect to a set of specified measure functions. However, even when these functions are differentiable, QD algorithms treat them as "black boxes", ignoring gradient information. We present the differentiable quality diversity (DQD) problem, a special case of QD, where both the objective and measure functions are first order differentiable. We then present MAP-Elites via a Gradient Arborescence (MEGA), a DQD algorithm that leverages gradient information to efficiently explore the joint range of the objective and measure functions. Results in two QD benchmark domains and in searching the latent space of a StyleGAN show that MEGA significantly outperforms state-of-the-art QD algorithms, highlighting DQD's promise for efficient quality diversity optimization when gradient information is available. Source code is available at https://github.com/icaros-usc/dqd."
+  bibtex: |
+        @inproceedings{NEURIPS2021_532923f1,
+         author = {Fontaine, Matthew and Nikolaidis, Stefanos},
+         booktitle = {Advances in Neural Information Processing Systems},
+         editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+         pages = {10040--10052},
+         publisher = {Curran Associates, Inc.},
+         title = {Differentiable Quality Diversity},
+         url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/532923f11ac97d3e7cb0130315b067dc-Paper.pdf},
+         volume = {34},
+         year = {2021}
+        }
+
+- title: "Covariance Matrix Adaptation MAP-Annealing"
+  authors:
+    - Matthew C. Fontaine
+    - Stefanos Nikolaidis
+  year: 2023
+  pdfurl: "https://dl.acm.org/doi/abs/10.1145/3583131.3590389"
+  abstract:
+      "Single-objective optimization algorithms search for the single highest-quality solution with respect to an objective. Quality diversity (QD) optimization algorithms, such as Covariance Matrix Adaptation MAP-Elites (CMA-ME), search for a collection of solutions that are both high-quality with respect to an objective and diverse with respect to specified measure functions. However, CMA-ME suffers from three major limitations highlighted by the QD community: prematurely abandoning the objective in favor of exploration, struggling to explore flat objectives, and having poor performance for low-resolution archives. We propose a new quality diversity algorithm, Covariance Matrix Adaptation MAP-Annealing (CMA-MAE), that addresses all three limitations. We provide theoretical justifications for the new algorithm with respect to each limitation. Our theory informs our experiments, which support the theory and show that CMA-MAE achieves state-of-the-art performance and robustness."
+  bibtex: |
+        @inproceedings{10.1145/3583131.3590389,
+            author = {Fontaine, Matthew and Nikolaidis, Stefanos},
+            title = {Covariance Matrix Adaptation MAP-Annealing},
+            year = {2023},
+            isbn = {9798400701191},
+            publisher = {Association for Computing Machinery},
+            address = {New York, NY, USA},
+            url = {https://doi.org/10.1145/3583131.3590389},
+            doi = {10.1145/3583131.3590389},
+            booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+            pages = {456–465},
+            numpages = {10},
+            location = {Lisbon, Portugal},
+            series = {GECCO '23}
+        }
+
+- title: "Covariance Matrix Adaptation MAP-Annealing: Theory and Experiments"
+  authors:
+    - Shihan Zhao
+    - Bryon Tjanaka
+    - Matthew C. Fontaine
+    - Stefanos Nikolaidis
+  year: 2025
+  pdfurl: "https://dl.acm.org/doi/10.1145/3665336"
+  abstract: "Single-objective optimization algorithms search for the single highest quality solution with respect to an objective. Quality diversity (QD) optimization algorithms, such as Covariance Matrix Adaptation MAP-Elites (CMA-ME), search for a collection of solutions that are both high quality with respect to an objective and diverse with respect to specified measure functions. However, CMA-ME suffers from three major limitations highlighted by the QD community: prematurely abandoning the objective in favor of exploration, struggling to explore flat objectives, and having poor performance for low-resolution archives. We propose a new QD algorithm, CMA MAP-Annealing (CMA-MAE), and its differentiable QD variant, CMA-MAE via a Gradient Arborescence (CMA-MAEGA), that address all three limitations. We provide theoretical justifications for the new algorithm with respect to each limitation. Our theory informs our experiments, which support the theory and show that CMA-MAE achieves state-of-the-art performance and robustness on standard QD benchmark and reinforcement learning domains."
+  bibtex: |
+        @article{10.1145/3665336,
+            author = {Zhao, Shihan and Tjanaka, Bryon and Fontaine, Matthew C. and Nikolaidis, Stefanos},
+            title = {Covariance Matrix Adaptation MAP-Annealing: Theory and Experiments},
+            year = {2025},
+            issue_date = {March 2025},
+            publisher = {Association for Computing Machinery},
+            address = {New York, NY, USA},
+            volume = {5},
+            number = {1},
+            url = {https://doi.org/10.1145/3665336},
+            doi = {10.1145/3665336},
+            journal = {ACM Trans. Evol. Learn. Optim.},
+            month = mar,
+            articleno = {4},
+            numpages = {53},
+            keywords = {Quality-diversity algorithms, evolutionary strategies}
+        }
+
+- title: "Density Descent for Diversity Optimization"
+  authors:
+    - David H. Lee
+    - Anishalakshmi Palaparthi
+    - Matthew C. Fontaine
+    - Bryon Tjanaka
+    - Stefanos Nikolaidis
+  year: 2024
+  pdfurl: "https://dl.acm.org/doi/10.1145/3638529.3654001"
+  abstract: "Diversity optimization seeks to discover a set of solutions that elicit diverse features. Prior work has proposed Novelty Search (NS), which, given a current set of solutions, seeks to expand the set by finding points in areas of low density in the feature space. However, to estimate density, NS relies on a heuristic that considers the k-nearest neighbors of the search point in the feature space, which yields a weaker stability guarantee. We propose Density Descent Search (DDS), an algorithm that explores the feature space via CMA-ES on a continuous density estimate of the feature space that also provides a stronger stability guarantee. We experiment with DDS and two density estimation methods: kernel density estimation (KDE) and continuous normalizing flow (CNF). On several standard diversity optimization benchmarks, DDS outperforms NS, the recently proposed MAP-Annealing algorithm, and other state-of-the-art baselines. Additionally, we prove that DDS with KDE provides stronger stability guarantees than NS, making it more suitable for adaptive optimizers. Furthermore, we prove that NS is a special case of DDS that descends a KDE of the feature space."
+  bibtex: |
+        @inproceedings{10.1145/3638529.3654001,
+            author = {Lee, David H. and Palaparthi, Anishalakshmi and Fontaine, Matthew C. and Tjanaka, Bryon and Nikolaidis, Stefanos},
+            title = {Density Descent for Diversity Optimization},
+            year = {2024},
+            isbn = {9798400704949},
+            publisher = {Association for Computing Machinery},
+            address = {New York, NY, USA},
+            url = {https://doi.org/10.1145/3638529.3654001},
+            doi = {10.1145/3638529.3654001},
+            booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+            pages = {674–682},
+            numpages = {9},
+            keywords = {quality diversity, kernel density estimation, novelty search},
+            location = {Melbourne, VIC, Australia},
+            series = {GECCO '24}
+        }
+
+- title: "Proximal Policy Gradient Arborescence for Quality Diversity Reinforcement Learning"
+  authors:
+    - Sumeet Batra
+    - Bryon Tjanaka
+    - Matthew C. Fontaine
+    - Aleksei Petrenko
+    - Stefanos Nikolaidis
+    - Gaurav Sukhatme
+  year: 2024
+  pdfurl: "https://openreview.net/forum?id=TFKIfhvdmZ"
+  abstract: "Training generally capable agents that thoroughly explore their environment and learn new and diverse skills is a long-term goal of robot learning. Quality Diversity Reinforcement Learning (QD-RL) is an emerging research area that blends the best aspects of both fields – Quality Diversity (QD) provides a principled form of exploration and produces collections of behaviorally diverse agents, while Reinforcement Learning (RL) provides a powerful performance improvement operator enabling generalization across tasks and dynamic environments. Existing QD-RL approaches have been constrained to sample efficient, deterministic off- policy RL algorithms and/or evolution strategies and struggle with highly stochastic environments. In this work, we, for the first time, adapt on-policy RL, specifically Proximal Policy Optimization (PPO), to the Differentiable Quality Diversity (DQD) framework and propose several changes that enable efficient optimization and discovery of novel skills on high-dimensional, stochastic robotics tasks. Our new algorithm, Proximal Policy Gradient Arborescence (PPGA), achieves state-of- the-art results, including a 4x improvement in best reward over baselines on the challenging humanoid domain."
+  bibtex: |
+        @article{ppga,
+          title={Proximal Policy Gradient Arborescence for Quality Diversity Reinforcement Learning},
+          author={Batra, Sumeet and Tjanaka, Bryon and Fontaine, Matthew C and Petrenko, Aleksei and Nikolaidis, Stefanos and Sukhatme, Gaurav},
+          journal={International Conference on Learning Representations},
+          year={2024}
+        }
+
+- title: "Quality Diversity for Robot Learning: Limitations and Future Directions"
+  authors:
+    - Sumeet Batra
+    - Bryon Tjanaka
+    - Stefanos Nikolaidis
+    - Gaurav Sukhatme
+  year: 2024
+  pdfurl: "https://dl.acm.org/doi/10.1145/3638530.3654431"
+  abstract: "Quality Diversity (QD) has shown great success in discovering high-performing, diverse policies for robot skill learning. While current benchmarks have led to the development of powerful QD methods, we argue that new paradigms must be developed to facilitate open-ended search and generalizability. In particular, many methods focus on learning diverse agents that each move to a different xy position in MAP-Elites-style bounded archives. Here, we show that such tasks can be accomplished with a single, goal-conditioned policy paired with a classical planner, achieving O(1) space complexity w.r.t. the number of policies and generalization to task variants. We hypothesize that this approach is successful because it extracts task-invariant structural knowledge by modeling a relational graph between adjacent cells in the archive. We motivate this view with emerging evidence from computational neuroscience and explore connections between QD and models of cognitive maps in human and other animal brains. We conclude with a discussion exploring the relationships between QD and cognitive maps, and propose future research directions inspired by cognitive maps towards future generalizable algorithms capable of truly open-ended search."
+  bibtex: |
+        @inproceedings{10.1145/3638530.3654431,
+            author = {Batra, Sumeet and Tjanaka, Bryon and Nikolaidis, Stefanos and Sukhatme, Gaurav},
+            title = {Quality Diversity for Robot Learning: Limitations and Future Directions},
+            year = {2024},
+            isbn = {9798400704956},
+            publisher = {Association for Computing Machinery},
+            address = {New York, NY, USA},
+            url = {https://doi.org/10.1145/3638530.3654431},
+            doi = {10.1145/3638530.3654431},
+            booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+            pages = {587–590},
+            numpages = {4},
+            keywords = {quality diversity, cognitive maps, reinforcement learning},
+            location = {Melbourne, VIC, Australia},
+            series = {GECCO '24 Companion}
+        }
